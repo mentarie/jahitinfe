@@ -83,7 +83,7 @@
                                             <ul class="dropdown">
                                                 <li><a href="makeownstore.html">Buat Toko Sendiri</a></li>
                                                 <li><a href="register-trainer.html">Daftarkan Jasa Pelatihan</a></li>
-                                                <li><a href="">Ikuti Pelatihan</a></li>
+                                                <li><a href="register-participant.html">Ikuti Pelatihan</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">contact</a></li>
@@ -233,14 +233,14 @@
                     <div class="contact-form-wrap mt--60">
                         <div class="col-xs-12">
                             <div class="contact-title">
-                                <h2 class="title__line--6" style="text-align: center;">BUAT TOKO</h2>
+                                <h2 class="title__line--6" style="text-align: center;">IKUTI PELATIHAN</h2>
                             </div>
                         </div>
                         <br>
                         <div class="col-xs-2"></div>
                         <div class="col-xs-8">
                             <div class="contact-title">
-                                <h6 class="title__line--5">Profil Pemilik</h6>
+                                <h6 class="title__line--5">Profil Peserta</h6>
                             </div>
                         </div>
                         <br>
@@ -248,11 +248,11 @@
                             <div class="col-xs-2"></div>
                             <div class="col-xs-10">
                                 <div class="single-contact-form">
-                                    <div class="col-xs-2" style="margin-top: 20px">Nama Lengkap
+                                    <div class="col-xs-2">Nama Peserta
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="contact-box subject">
-                                            <input type="text" name="name" placeholder="Nama Lengkap*">
+                                            <input type="text" name="name" placeholder="Nama Peserta*">
                                         </div>                                        
                                     </div>
                                 </div>
@@ -261,7 +261,7 @@
                             <div class="col-xs-2"></div>
                             <div class="col-xs-10">
                                 <div class="single-contact-form">
-                                    <div class="col-xs-2" style="margin-top: 20px">Nomor Handphone
+                                    <div class="col-xs-2" style="margin-top: 10px">Nomor Handphone
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="contact-box subject">
@@ -286,24 +286,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="height: 100px"></div>
-                            <div class="col-xs-2"></div>
-                            <div class="col-xs-10">
-                                <div class="single-contact-form">
-                                    <div class="col-xs-2" style="margin-top: 20px">Link Toko
-                                    </div>
-                                    <div class="col-xs-8">
-                                         <div class="contact-box subject">
-                                            <input type="text" name="linktoko" placeholder="jahitin.com/link ">
-                                        </div>                                
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-xs-2"></div>
                         <div class="col-xs-8">
                             <div class="contact-title">
-                                <h6 class="title__line--5">Informasi Toko / Jasa</h6>
+                                <h6 class="title__line--5">Pilih Pelatihan Tersedia</h6>
                             </div>
                         </div>
                         <br>
@@ -311,61 +298,13 @@
                             <div class="col-xs-2"></div>
                             <div class="col-xs-10">
                                 <div class="single-contact-form">
-                                    <div class="col-xs-2" style="margin-top: 20px">Nama Toko / Jasa
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="contact-box subject">
-                                            <input type="text" name="name" placeholder="Nama Toko / Jasa*">
-                                        </div>                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="height: 100px"></div>
-                            <div class="col-xs-2"></div>
-                            <div class="col-xs-10">
-                                <div class="single-contact-form">
-                                    <div class="col-xs-2" style="margin-top: 20px">Alamat
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="contact-box subject">
-                                            <input type="text" name="address" placeholder="Alamat*">
-                                        </div>                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="height: 100px"></div>
-                            <div class="col-xs-2"></div>
-                            <div class="col-xs-10">
-                                <div class="single-contact-form">
-                                    <div class="col-xs-2" style="margin-top: 20px">Kodepos
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="contact-box name">
-                                            <input type="text" name="kodepos" placeholder="Kodepos*">
-                                        </div>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form-wrap mt--60">
-                        <div class="col-xs-2"></div>
-                        <div class="col-xs-8">
-                            <div class="contact-title">
-                                <h6 class="title__line--5">Spesifikasi Jasa / Toko</h6>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="col-xs-12">
-                            <div class="col-xs-2"></div>
-                            <div class="col-xs-10">
-                                <div class="single-contact-form">
-                                    <div class="col-xs-2">Jenis
+                                    <div class="col-xs-2">Penyedia Pelatihan
                                     </div>
                                     <div class="col-xs-8">
                                         <select class="form-control">
-                                            <option value="konveksi">Konveksi</option>
-                                            <option value="penjahit_khusus">Penjahit Khusus</option>
+                                        <!-- ini pakai backend -->
+                                            <option value="pelatihan_konveksi">Clothingan Bojonegoro</option>
+                                            <option value="pelatihan_penjahit_khusus">Kursus Menjahit Ibu Ida</option>
                                         </select>                                            
                                     </div>
                                 </div>
@@ -376,7 +315,7 @@
                             <div class="col-xs-2"></div>
                             <div style="height: 100px"></div>
                             <div class="col-xs-12" style="text-align: center;">
-                                <button type="submit" class="fv-btn" >Daftar</button>
+                                <button type="submit" class="fv-btn">Daftar</button>
                             </div>
                         </div>
                     </div> 

@@ -29,7 +29,6 @@
     <!-- User style -->
     <link rel="stylesheet" href="css/custom.css">
 
-
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
@@ -135,7 +134,8 @@
                                         <a href="#"><i class="icon-magnifier icons"></i></a>
                                     </div>
                                     <div class="header__account">
-                                        <a href="#"><i class="icon-user icons"></i></a>
+                                        <!-- <a data-toggle="modal" data-target="#modalsignin"><i class="icon-user icons"></i></a> -->
+                                        <a href="" data-toggle="modal" data-target="#modalsignin"><i class="icon-user icons drop"></i></a>
                                     </div>
                                     <div class="htc__shopping__cart">
                                         <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
@@ -1118,9 +1118,38 @@
         <!-- End Footer Style -->
     </div>
     <!-- Body main wrapper end -->
-
+    <!-- Modal -->
+    <div class="modal fade" id="modalsignin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="form-signin-heading" align="">Login</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin">       
+              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+              </label>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Placed js at the end of the document so the pages load faster -->
-
+    <!-- modal js -->
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').trigger('focus')
+        })
+    </script>
     <!-- jquery latest version -->
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap framework js -->
